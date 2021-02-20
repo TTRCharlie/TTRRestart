@@ -1,0 +1,8 @@
+#!/bin/bash
+node index.js &> debug.log
+if [ -s debug.log ] 
+then
+	sendemail -f From Email -t Target -u Message -m  $(cat debug.log) -s SMTP server:Port -o tls=yes -xu SMTP Username -xp SMTP Password
+else
+	sendemail -f From Email -t Target -u Message -m  $(cat debug.log) -s SMTP server:Port -o tls=yes -xu SMTP Username -xp SMTP Password
+fi
