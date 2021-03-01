@@ -13,7 +13,7 @@ client.getClientServers()
     let server = servers[4];
  
     await server.sendCommand('bc Server will restart in 10 seconds')
-    await sleep(10000)
+    sleep(10000)
     await server.restart();
     
  
