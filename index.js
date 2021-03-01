@@ -12,13 +12,8 @@ client.getClientServers()
 .then(async servers => {
     let server = servers[4];
  
-<<<<<<< HEAD
-    await server.sendCommand('"bc Server will restart in 10 seconds"');
+    await server.sendCommand('bc Server will restart in 10 seconds');
     sleep(10000);
-=======
-    await server.sendCommand('bc Server will restart in 10 seconds')
-    sleep(10000)
->>>>>>> parent of 38aa78b... Syntax correction
     await server.restart();
     
  
