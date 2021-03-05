@@ -1,8 +1,8 @@
 const Pterodactyl = require('pterodactyl.js');
 const api = require('request.js');
 const client = new Pterodactyl.Builder()
-    .setURL('https://creative.ttr3.tk')
-    .setAPIKey('xMORJrUOZGtnbnquNz5sPM9UTFMZMqz2zFpXG8pjSi7fHoQa')
+    .setURL('Pterodactily Panel URL')
+    .setAPIKey('Pterodactily API Key')
     .asUser();
  
 client.getClientServers()
